@@ -96,6 +96,7 @@ func NewInfraStack(scope constructs.Construct, id string, props *InfraStackProps
 	logGroup := awslogs.NewLogGroup(stack, jsii.String("LogGroup"), &awslogs.LogGroupProps{
 		LogGroupName: jsii.String("WebServerLogGroup"),
 		Retention:    awslogs.RetentionDays_FIVE_DAYS,
+		RemovalPolicy: awscdk.RemovalPolicy_DESTROY,
 	})
 
 	// Get the image from the registry
