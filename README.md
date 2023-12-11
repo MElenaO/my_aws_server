@@ -10,7 +10,5 @@ CDK project
 - Create a ECS Cluster
 - Create a Fargate Task Definition to run container image, which listens in port 8080
 - Create a Fargate Service to deploy the task
+- Use DynamoDB to store greetings received in REST API
 
-Github actions
-- build the app
-- authenticate to AWS
